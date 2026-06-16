@@ -8,39 +8,25 @@ const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState('');
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    setStatus('Sending...');
+    setStatus('Opening email client...');
 
-    // Replace this with your actual Web3Forms Access Key
-    const ACCESS_KEY = "YOUR_ACCESS_KEY_HERE"; 
+    const subject = `New Message from ${formData.name} via Portfolio`;
+    const body = `Name: ${formData.name}
+Email: ${formData.email}
 
-    const formDataToSubmit = new FormData();
-    formDataToSubmit.append("access_key", ACCESS_KEY);
-    formDataToSubmit.append("name", formData.name);
-    formDataToSubmit.append("email", formData.email);
-    formDataToSubmit.append("message", formData.message);
+Message:
+${formData.message}`;
 
-    try {
-      const response = await fetch("https://api.web3forms.com/submit", 
-        {
-        method: "POST",
-        body: formDataToSubmit
-      });
+    const mailtoLink = `mailto:${personalInfo.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
 
-      const data = await response.json();
-
-      if (data.success) {
-        setStatus("Message sent successfully!");
-        setFormData({ name: '', email: '', message: '' });
-      } else {
-        setStatus(data.message || "Something went wrong.");
-      }
-    } catch (error) {
-      setStatus("Error sending message. Please try again.");
-    }
-
-    setTimeout(() => setStatus(''), 5000);
+    setTimeout(() => {
+      setStatus('Message prepared in your email client!');
+      setTimeout(() => setStatus(''), 3000);
+      setFormData({ name: '', email: '', message: '' });
+    }, 1000);
   };
 
   return (

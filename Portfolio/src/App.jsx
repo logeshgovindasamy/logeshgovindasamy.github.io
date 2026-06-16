@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchPortfolioData } from './store/dataSlice';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -9,7 +10,12 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 
 function App() {
+  const dispatch = useDispatch();
   const isDarkMode = useSelector((state) => state.theme.isDarkMode);
+
+  useEffect(() => {
+    dispatch(fetchPortfolioData());
+  }, [dispatch]);
 
   useEffect(() => {
     if (isDarkMode) {
