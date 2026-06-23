@@ -24,7 +24,7 @@ const initialState = {
     { category: 'Languages', items: ['CoreJava'] },
     { category: 'Front-End', items: ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind CSS'] },
     { category: 'Back-End / Learning', items: ['Spring Boot', 'Full Stack Java'] },
-    { category: 'Database', items: ['SQL', 'JDBC'] },
+    { category: 'Database', items: ['SQL', 'JDBC','MONGO DB'] },
     { category: 'Tools', items: ['GitHub', 'Git'] },
   ],
   education: [
