@@ -15,17 +15,18 @@ const initialState = {
     tagline: 'Building scalable, user-friendly applications with a passion for learning new technologies.',
     email: 'logeswaranng@gmail.com',
     phone: '6383378490',
+    Github: 'https://github.com/logeshgovindasamy',
     location: 'Murungapatty, Salem, TN-636307',
     linkedin: 'https://linkedin.com/',
     github: 'https://github.com/logeshgovindasamy',
     about: 'Motivated and enthusiastic Full Stack Developer with 1 month of hands-on experience in React development and a Java Full Stack certification. Skilled in building responsive web applications using HTML, CSS, JavaScript, React, Tailwind CSS, and Java technologies. Passionate about learning new technologies, solving real-world problems, and developing scalable, user-friendly applications. A quick learner and team player seeking an opportunity to grow as a professional software developer.',
   },
   skills: [
-    { category: 'Languages', items: ['CoreJava'] },
+    { category: 'Languages', items: ['CoreJava', 'NextJs'] },
     { category: 'Front-End', items: ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind CSS'] },
     { category: 'Back-End / Learning', items: ['Spring Boot', 'Full Stack Java'] },
-    { category: 'Database', items: ['SQL', 'JDBC','MONGO DB'] },
-    { category: 'Tools', items: ['GitHub', 'Git'] },
+    { category: 'Database', items: ['SQL', 'JDBC', 'DynomoDB'] },
+    { category: 'Tools', items: ['GitHub', 'Git', 'Postman', 'VS Code'] },
   ],
   education: [
     {
