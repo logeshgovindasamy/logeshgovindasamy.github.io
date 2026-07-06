@@ -4,6 +4,7 @@ import { toggleTheme } from '../store/themeSlice';
 import { Menu, X, Sun, Moon, Download } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-scroll';
+import resumePDF from '../assets/Logeshwaran-BE.pdf';
 
 const NAV_LINKS = [
   { name: 'About', to: 'about' },
@@ -73,8 +74,8 @@ const Navbar = () => {
               <motion.a
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
-                href="/resume.pdf"
-                download
+                href={resumePDF}
+                download="Logeshwaran-BE.pdf"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-600 text-white text-sm font-medium hover:bg-indigo-700 shadow-md shadow-indigo-600/20 transition-all hover:shadow-indigo-600/40"
               >
                 <Download size={16} />
@@ -124,8 +125,8 @@ const Navbar = () => {
                 </Link>
               ))}
               <a
-                href="/resume.pdf"
-                download
+                href={resumePDF}
+                download="Logeshwaran-BE.pdf"
                 className="inline-flex items-center justify-center gap-2 w-full mt-4 px-4 py-3 rounded-xl bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition"
               >
                 <Download size={18} />

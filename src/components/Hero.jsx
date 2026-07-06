@@ -90,7 +90,7 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ type: 'spring', stiffness: 50, delay: 0.5 }}
-            className="relative hidden lg:block"
+            className="relative"
           >
             <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500 to-purple-500 rounded-3xl blur-2xl opacity-20 dark:opacity-40 animate-pulse"></div>
             <div className="relative aspect-square max-w-sm lg:max-w-md xl:max-w-sm mx-auto rounded-3xl overflow-hidden border border-slate-200/50 dark:border-slate-700/50 shadow-2xl bg-white dark:bg-slate-900 flex items-center justify-center">
