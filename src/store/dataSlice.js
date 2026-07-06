@@ -15,7 +15,7 @@ const initialState = {
     tagline: 'Building scalable, user-friendly applications with a passion for learning new technologies.',
     email: 'logeswaranng@gmail.com',
     phone: '6383378490',
-    Github: 'https://github.com/logeshgovindasamy',
+    Git: 'https://github.com/logeshgovindasamy',
     location: 'Murungapatty, Salem, TN-636307',
     linkedin: 'https://linkedin.com/',
     github: 'https://github.com/logeshgovindasamy',
