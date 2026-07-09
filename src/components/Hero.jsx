@@ -1,6 +1,7 @@
 import {  motion } from 'framer-motion';
 import { useSelector } from 'react-redux';
 import { Mail, ArrowRight } from 'lucide-react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import img from  '../assets/img.png'
 const Hero = () => {
@@ -79,9 +80,19 @@ const Hero = () => {
             </motion.div>
 
             <motion.div variants={itemVariants} className="flex items-center gap-5 pt-8 text-slate-500 dark:text-slate-400">
-              <a href={`mailto:${personalInfo.email}`} className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+              <a href={`mailto:${personalInfo.email}`} className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" aria-label="Email">
                 <Mail size={24} />
               </a>
+              {personalInfo.github && (
+                <a href={personalInfo.github} target="_blank" rel="noreferrer" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" aria-label="GitHub">
+                  <FaGithub size={24} />
+                </a>
+              )}
+              {personalInfo.linkedin && (
+                <a href={personalInfo.linkedin} target="_blank" rel="noreferrer" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" aria-label="LinkedIn">
+                  <FaLinkedin size={24} />
+                </a>
+              )}
             </motion.div>
           </motion.div>
 

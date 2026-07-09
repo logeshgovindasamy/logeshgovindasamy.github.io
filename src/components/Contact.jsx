@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useSelector } from 'react-redux';
 import { Mail, Phone, MapPin, Send, MessageSquare } from 'lucide-react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Contact = () => {
   const { personalInfo } = useSelector((state) => state.portfolioData);
@@ -82,6 +83,30 @@ ${formData.message}`;
                   <p className="text-slate-600 dark:text-slate-400 text-sm">{personalInfo.location}</p>
                 </div>
               </div>
+
+              {personalInfo.github && (
+                <a href={personalInfo.github} target="_blank" rel="noreferrer" className="flex items-center gap-4 group p-4 rounded-2xl hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors border border-transparent hover:border-slate-200 dark:hover:border-slate-700">
+                  <div className="w-12 h-12 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <FaGithub size={20} />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-slate-900 dark:text-white">GitHub</h4>
+                    <p className="text-slate-600 dark:text-slate-400 text-sm">{personalInfo.github.replace('https://', '')}</p>
+                  </div>
+                </a>
+              )}
+
+              {personalInfo.linkedin && (
+                <a href={personalInfo.linkedin} target="_blank" rel="noreferrer" className="flex items-center gap-4 group p-4 rounded-2xl hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors border border-transparent hover:border-slate-200 dark:hover:border-slate-700">
+                  <div className="w-12 h-12 bg-sky-50 dark:bg-sky-900/30 text-sky-600 dark:text-sky-400 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <FaLinkedin size={20} />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-slate-900 dark:text-white">LinkedIn</h4>
+                    <p className="text-slate-600 dark:text-slate-400 text-sm">{personalInfo.linkedin.replace('https://', '')}</p>
+                  </div>
+                </a>
+              )}
             </div>
           </motion.div>
 

@@ -57,11 +57,25 @@ const initialState = {
       role: 'Software Engineer (Intern)',
       company: 'Vajram Technologies, Covai',
       period: 'Currently Intern',
-      description: ['Currently working as a Software Engineer Intern, focusing on full-stack development and modern web technologies.'],
+      description: [
+        'Developing real-time web applications including and RX-Engine platforms.',
+        'Implementing modular UI components and connecting front-end layouts with back-end logic.',
+        'Working with React.js front-end.'],
     },
     {
       id: 2,
-      role: 'Artificial Intelligence Intern',
+      role: 'Web Developer (Intern)',
+      company: 'Webronics',
+      period: 'May 2026 - Jun 2026',
+      description: [
+        'Led the full-stack modernization of a luxury e-commerce platform, replacing a traditional Spring Boot and Vite setup with Next.js ',
+        'Architected a high-performance database schema using AWS DynamoDB SDK v3',
+        'utilizing an optimized Single-Table Design pattern',
+      ],
+    },
+    {
+      id: 3,
+      role: 'Artificial Intelligence (Intern)',
       company: 'Fantasy Solution',
       period: 'Apr 2024 - Jun 2024',
       description: [
@@ -81,7 +95,18 @@ const initialState = {
         'Developed models to analyze key variables and provide insights.',
         'Created ML framework optimizing yield predictions for precision farming.',
       ],
-      link: '#',
+      //link: '#',
+    },
+    {
+      id: 2,
+      title: 'E-Commerce Platform',
+      tech: ['NextJs', 'Tailwind CSS', 'JavaScript', 'AWS DynamoDB'],
+      description: 'Luxury e-commerce platform modernizing a traditional Spring Boot and Vite setup with Next.js.',
+      highlights: [
+        'Architected a high-performance AWS DynamoDB schema using Single-Table Design and secured routes with custom JWT middleware.',
+        'Implemented persistent state checkout workflows via Zustand and automated PDF invoice generation with pdfkit.',
+      ],
+     // link: '#',
     },
   ],
   certifications: [
