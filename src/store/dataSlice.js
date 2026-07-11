@@ -53,7 +53,7 @@ const initialState = {
   ],
   experience: [
     {
-      id: 1,
+      id: 2,
       role: 'Software Engineer Trainee',
       company: 'Vajram Technologies, Covai',
       period: 'Feb 2026-Apr 2026',
@@ -63,7 +63,7 @@ const initialState = {
         'Working with React.js front-end.'],
     },
     {
-      id: 2,
+      id: 1,
       role: 'Web Developer (Intern)',
       company: 'Webronics',
       period: 'May 2026 - Jun 2026',
