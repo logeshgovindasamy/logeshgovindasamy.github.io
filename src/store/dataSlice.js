@@ -54,9 +54,9 @@ const initialState = {
   experience: [
     {
       id: 1,
-      role: 'Software Engineer (Intern)',
+      role: 'Software Engineer Trainee',
       company: 'Vajram Technologies, Covai',
-      period: 'Currently Intern',
+      period: 'Feb 2026-Apr 2026',
       description: [
         'Developing real-time web applications including and RX-Engine platforms.',
         'Implementing modular UI components and connecting front-end layouts with back-end logic.',
@@ -106,7 +106,7 @@ const initialState = {
         'Architected a high-performance AWS DynamoDB schema using Single-Table Design and secured routes with custom JWT middleware.',
         'Implemented persistent state checkout workflows via Zustand and automated PDF invoice generation with pdfkit.',
       ],
-     // link: '#',
+      // link: '#',
     },
   ],
   certifications: [
