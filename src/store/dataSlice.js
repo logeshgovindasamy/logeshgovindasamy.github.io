@@ -68,7 +68,7 @@ const initialState = {
       company: 'Webronics',
       period: 'May 2026 - Jun 2026',
       description: [
-        'Led the full-stack modernization of a 24SJU and Smart Storing platform, replacing a traditional Spring Boot and Vite setup with Next.js ',
+        'Led the full-stack modernization of a 24SJU and Smart Storing platform, Vite setup with Next.js ',
         'Architected a high-performance database schema using AWS DynamoDB SDK v3',
         'utilizing an optimized Single-Table Design pattern',
       ],
