@@ -33,7 +33,7 @@ const initialState = {
       institution: 'MAHENDRA INSTITUTE OF ENGINEERING AND TECHNOLOGY',
       location: 'Mallasamudram, Namakkal',
       year: '2025',
-      degree: 'B.E / B.Tech',
+      degree: 'B.E -  CSE',
       score: 'CGPA: 7.77',
     },
     {
