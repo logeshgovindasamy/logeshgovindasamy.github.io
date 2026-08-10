@@ -65,12 +65,12 @@ const initialState = {
     {
       id: 1,
       role: 'Web Developer (Intern)',
-      company: 'Webronics',
+      company: 'Webronics Pvt Ltd, Salem',
       period: 'May 2026 - Jun 2026',
       description: [
         'Led the full-stack modernization of a 24SJU and Smart Storing platform, Vite setup with Next.js ',
         'Architected a high-performance database schema using AWS DynamoDB SDK v3',
-        'utilizing an optimized Single-Table Design pattern',
+        'utilizing an optimized Single-Table Design patterns',
       ],
     },
     {
